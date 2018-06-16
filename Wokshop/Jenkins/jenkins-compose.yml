@@ -1,0 +1,24 @@
+version: '3.1'
+services:
+  Jenkins:
+    image: jenkins/jenkins:lts
+    deploy:
+      replicas: 1
+      placement:
+        constraints:
+          - node.platform.os==linux
+          - node.hostname==dgwus2devdkrm01
+    ports:
+      - "8080:8080"
+    privileged: true
+    environment:
+      environment: dev 
+    networks:
+      - backend
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - /docker/jenkins:/var/jenkins_home
+networks:
+  backend:
+    external:
+      name: dev
