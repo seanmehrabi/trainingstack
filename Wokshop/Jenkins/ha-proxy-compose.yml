@@ -1,0 +1,25 @@
+version: "3.2"
+
+services:
+  haproxy:
+    image: haproxy
+    ports:
+      - "80:80"
+      - "443:443"
+    networks:
+      - backend
+    volumes:
+      - /docker/haproxy:/usr/local/etc/haproxy
+
+  db:
+    image: aidaho/haproxy-wi
+    ports:
+      - "8080:80"
+    networks:
+      - backend
+    volumes:
+      - haproxy-wi:/var/www/haproxy-wi/app
+networks:
+  backend:
+    external:
+      name: dev
