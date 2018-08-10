@@ -15,3 +15,6 @@ choco install -y curl
 choco install -y atom
 choco install -y putty
 choco install -y visualstudiocode
+#Adding Chef
+choco install -y chefdk
+choco install -y terraform
