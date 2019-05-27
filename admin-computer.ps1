@@ -15,6 +15,33 @@ choco install -y curl
 choco install -y atom
 choco install -y putty
 choco install -y visualstudiocode
+
+#Adding Azure 
+choco install -y azure-cli
+choco install -y azurepowershell
+choco install -y microsoftazurestorageexplorer
+
+# Docker
+choco install -y docker-desktop
+choco install -y docker-compose
+
+#Rackspace 
+choco install -y rack
+
+#Kubernetes Kubectl
+choco install -y kubernetes-cli
+
+# Installing Linux Sub in Windows 
+choco install -y wsl 
+choco install -y wsl-ubuntu-1804
+
 #Adding Chef
 choco install -y chefdk
+
+#Adding Puppet 
+choco install -y pdk
+
+#Adding HashiCorp 
 choco install -y terraform
+choco install -y packer
+choco install -y vault
