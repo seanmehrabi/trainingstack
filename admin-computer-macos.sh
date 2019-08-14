@@ -23,3 +23,5 @@ brew cask install chef/chef/chefdk
 brew install ansible
 brew install terraform
 brew cask install visual-studio-code
+#install some cool software 
+brew cask install spectacle
