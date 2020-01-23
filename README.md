@@ -12,16 +12,20 @@ You can create your end to end DevOps Pipline in less than eight minutes. **[Sea
 
 ### Setuping up an admin computer:  
 
+**Windows**
 Open **Powershell as administrator** and run the following command: 
 ```powershell
 Invoke-WebRequest https://raw.githubusercontent.com/seanmehrabi/trainingstack/master/admin-computer.ps1 -UseBasicParsing | iex
 ```
 
+**MAC**
+
+```bash
+wget -O - https://raw.githubusercontent.com/seanmehrabi/trainingstack/master/admin-computer-macos.sh | bash
+```
 
 ### Setuping up your DevOps Server: 
 ```shell 
 sudo bash <(curl -s https://raw.githubusercontent.com/seanmehrabi/trainingstack/master/Wokshop/Jenkins/deploy.sh)
 ```
 
-
-### How to access Jekins, Portainer UI: 
