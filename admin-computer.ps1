@@ -9,8 +9,6 @@ choco install -y notepadplusplus
 choco install -y git.install
 choco install -y googlechrome
 choco install -y firefox
-choco install -y awscli
-choco install -y awstools.powershell
 choco install -y curl
 choco install -y atom
 choco install -y putty
@@ -21,12 +19,24 @@ choco install -y azure-cli
 choco install -y azurepowershell
 choco install -y microsoftazurestorageexplorer
 
+#AWS
+choco install -y awscli
+choco install -y awstools.powershell
+choco install -y aws-iam-authenticator
+
+#Rackspace 
+choco install -y rack
+
+#Ali Cloud
+choco install -y aliyun-cli 
+
+#Google Cloud SDK (cli)
+choco install -y gcloudsdk
+
 # Docker
 choco install -y docker-desktop
 choco install -y docker-compose
 
-#Rackspace 
-choco install -y rack
 
 #Kubernetes Kubectl
 choco install -y kubernetes-cli
