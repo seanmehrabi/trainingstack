@@ -1,7 +1,5 @@
 #installing DevOps Admin Tools in Windows using Choco
-$script = New-Object Net.WebClient
-$script.DownloadString("https://chocolatey.org/install.ps1")
-Invoke-WebRequest https://chocolatey.org/install.ps1 -UseBasicParsing | iex
+Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
 choco upgrade chocolatey
 choco install -y nano
 choco install -y python
