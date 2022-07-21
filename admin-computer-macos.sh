@@ -4,7 +4,7 @@
 
 brew install --cask firefox
 brew install --cask google-chrome 
-brew install docker docker-compose docker-machine xhyve docker-machine-driver-xhyve
+#brew install docker docker-compose docker-machine xhyve docker-machine-driver-xhyve
 brew install kubernetes-cli 
 brew install --cask atom 
 brew install --cask sublime-text 
