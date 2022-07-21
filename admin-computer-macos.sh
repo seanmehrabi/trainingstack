@@ -1,7 +1,7 @@
 #!/bin/bash
 
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-brew update                           # Fetch latest version of homebrew and formula.
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
 brew install --cask firefox
 brew install --cask google-chrome 
 brew install docker docker-compose docker-machine xhyve docker-machine-driver-xhyve
